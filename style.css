@@ -108,8 +108,10 @@ section p {
 }
 
 .btn {
+  text-transform: uppercase;
   display: inline-block;
   padding: 10px 30px;
+  margin: 13px;
   border-radius: 10px;
   background: #d30103;
   color: #fffdff;
@@ -140,6 +142,7 @@ section p {
   width: 800px;
   height: 600px;
   padding: 0px 0px 40px 0px;
+  border-radius: 10px;
 }
 
 /* Responsive Navbar */
@@ -224,7 +227,7 @@ section p {
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 50px;
+  height: 60px;
   width: 100%;
   background-color: #d30103;
   color: #fffdff;
@@ -239,6 +242,23 @@ section p {
 .footer-links {
   padding: 5px 10px;
   color: #fffdff;
+  text-decoration: none;
+}
+
+.footer-links:hover {
+  transform: scale(1.2);
+}
+
+.footer-links-text {
+  padding: 5px 10px;
+  color: #fffdff;
+  text-decoration: none;
+}
+
+.footer-links-text:hover {
+  background-color: #fffdff;
+  color: #d30103;
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 1620px) {
@@ -401,5 +421,5 @@ section p {
 
 /* Section images */
 section#aktualnosci {
-  background: url('img/fittlo2.jpeg') no-repeat center center/ cover;
+  background: url('img/background1.jpg') no-repeat center center/ cover;
 }
