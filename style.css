@@ -18,7 +18,6 @@ body {
   height: 100vh;
   overflow: hidden;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 /* showcase with full page mp4 */
@@ -162,7 +161,6 @@ section {
 }
 
 section h1 {
-  text-transform: uppercase;
   font-size: clamp(1.1rem, 6vw - 1.8rem, 2.3rem);
   max-width: 100%;
 }
@@ -171,7 +169,7 @@ section p {
   font-family: sans-serif;
   font-weight: lighter;
   font-size: clamp(0.7rem, 6vw - 0.7rem, 1rem);
-  max-width: 90%;
+  max-width: 100%;
   text-transform: none;
 }
 
@@ -257,8 +255,9 @@ a {
   align-items: center;
   text-align: center;
   justify-content: center;
-  text-transform: uppercase;
   display: inline-block;
+  width: 300px;
+  height: auto;
   padding: 6px 27px;
   margin: 10px;
   border-radius: 5px;
@@ -326,7 +325,6 @@ a {
 
 .map-responsive {
   overflow: hidden;
-  padding-bottom: 10%;
   position: relative;
   height: 0;
 }
@@ -337,8 +335,7 @@ a {
   height: 100%;
   width: 100%;
   position: absolute;
-  border-radius: 10px;
-  max-height: 40vh;
+  max-height: 80vh;
 }
 
 /* start of media queries */
@@ -469,7 +466,11 @@ a {
   }
 
   .btn {
-    padding: 5px 15px;
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+    min-width: 8vw;
+    padding: 8px 15px;
     margin: 5px 10px;
   }
 
@@ -479,6 +480,16 @@ a {
 
   #grafik object {
     min-height: 70vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .btn {
+    width: 200px;
+    height: auto;
+    min-width: 6vw;
+    padding: 8px 15px;
+    margin: 5px 10px;
   }
 }
 
