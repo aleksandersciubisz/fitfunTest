@@ -161,14 +161,14 @@ section {
 }
 
 section h1 {
-  font-size: clamp(1.1rem, 6vw - 1.8rem, 2.3rem);
+  font-size: clamp(0.9rem, 4vw - 1.3rem, 1.6rem);
   max-width: 100%;
 }
 
 section p {
   font-family: sans-serif;
   font-weight: lighter;
-  font-size: clamp(0.7rem, 6vw - 0.7rem, 1rem);
+  font-size: clamp(0.7rem, 8vw - 0.7rem, 0.9rem);
   max-width: 100%;
   text-transform: none;
 }
@@ -338,6 +338,10 @@ a {
   max-height: 80vh;
 }
 
+#kontakt a:hover {
+  color: #cb0016;
+}
+
 /* start of media queries */
 @media screen and (max-width: 1410px) {
   .navbar {
@@ -350,6 +354,16 @@ a {
 
   #navbar-logo {
     justify-self: unset;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #kontakt .card {
+    text-align: left;
+  }
+
+  .displayNone950px {
+    display: none;
   }
 }
 
@@ -435,8 +449,7 @@ a {
   }
 
   section h1 {
-    text-transform: uppercase;
-    font-size: clamp(1.2rem, 8vw - 1.5rem, 2rem);
+    font-size: clamp(0.9rem, 8vw - 1.1rem, 1.2rem);
     max-width: 100%;
   }
 
@@ -490,6 +503,20 @@ a {
     min-width: 6vw;
     padding: 8px 15px;
     margin: 5px 10px;
+  }
+
+  .displayNone700px {
+    display: none;
+  }
+
+  #kontakt p {
+    font-size: clamp(0.5rem, 8vw - 0.6rem, 0.8rem);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .displayNone420px {
+    display: none;
   }
 }
 
