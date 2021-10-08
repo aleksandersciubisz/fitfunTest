@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&family=Roboto:wght@100;300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
     <link
@@ -18,92 +18,213 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
 
     <!-- Main custom stylesheet -->
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="fullPage.css" />
-    <link rel="stylesheet" href="NavFot.css" />
 
     <title>Fit & Fun</title>
   </head>
+
   <body>
     <!-- Full page is wrapped in this div -->
     <div class="full-page-wiev-container">
+      <!-- Responsive Navbar -->
+      <div class="nav-container">
+        <nav class="navbar">
+          <a href="#home">
+            <img src="img/fitFunLogo.png" alt="" id="navbar-logo"
+          /></a>
+          <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="nav-menu">
+            <li>
+              <a href="#aktualnosci" class="nav-links">aktualności</a>
+            </li>
+            <li><a href="#oferta" class="nav-links">oferta</a></li>
+            <li><a href="#onas" class="nav-links">o&nbsp;nas</a></li>
 
-<!-- Responsive Navbar -->
-<div class="nav-container">
-  <nav class="navbar">
-    <img src="img/fitFunLogo.png" id="navbar-logo" alt="">
-    <div class="menu-toggle" id="mobile-menu">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
-    <ul class="nav-menu">
-      <li><a href="" class="nav-links">aktualności</a></li>
-      <li><a href="" class="nav-links">oferta</a></li>
-      <li><a href="" class="nav-links">o&nbsp;nas</a></li>
-      <li><a href="" class="nav-links">grafik</a></li>
-      <li><a href="" class="nav-links">kontakt</a></li>
-      <li><a href="" class="nav-links">zaloguj&nbsp;się</a></li>
+            <li><a href="#grafik" class="nav-links">grafik</a></li>
+            <li><a href="#kontakt" class="nav-links">kontakt</a></li>
 
-    </ul>
-  </nav>
-</div>
+            <li>
+              <a
+                href="https://fitfun-warszawa.cms.efitness.com.pl/Login/SystemLogin?returnurl=https://fitfun-warszawa.cms.efitness.com.pl/"
+                class="nav-links"
+                >zaloguj&nbsp;się</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
 
       <!-- Full page sections-->
-      <section id="a" class="">
-        <div class="card">
-          <h1>Test section 1</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, odio
-            nobis.
-          </p>
-          <br />
-          <a href="#b" class="btn">test btn</a>
+      <section id="home" class="showcase">
+        <div class="video-container">
+          <video src="img/fitfunHome.mov" autoplay="" muted="" loop=""></video>
+        </div>
+        <div class="homecontent">
+          <h1>Witamy w Fit &amp; Fun!</h1>
+          <p>Od 25 lat spełniamy marzenia</p>
+          <a
+            href="https://fitfun-warszawa.cms.efitness.com.pl/Login/SystemLogin?returnurl=https://fitfun-warszawa.cms.efitness.com.pl/strefa-klienta"
+            class="btn"
+            >Dołącz do nas</a
+          >
+          <a
+            href="https://fitfun-warszawa.cms.efitness.com.pl/kup-karnet"
+            class="btn"
+            >Wybierz karnet</a
+          >
         </div>
       </section>
 
-      <section id="b" class="">
-        <div class="card">
-          <h1>Test section 2</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, odio
-            nobis.
-          </p>
-          <br />
-          <a href="#a" class="btn">test btn 2</a>
+      <section id="aktualnosci" class="">
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <h1>Aktualności</h1>
+              <p>
+                Wszystkich aktywnych klubowiczów zachęcamy do obserwowania
+                naszych mediów społecznościowych, umieszamy tam najbardziej
+                aktualne informacje.
+              </p>
+              <br />
+              <a
+                href="https://www.facebook.com/fitnessfitfun/"
+                class="btn"
+                style="text-transform: none"
+                >Facebook:
+                <div
+                  class="fab fa-facebook-square fa-lg"
+                  style="border-style: none"
+                ></div
+              ></a>
+
+              <a
+                href="https://www.instagram.com/fitfun_gym_warsaw/?hl=en"
+                class="btn"
+                style="text-transform: none"
+                >Instagram:
+                <div
+                  class="fab fa-instagram-square fa-lg"
+                  style="border-style: none"
+                ></div
+              ></a>
+            </div>
+          </div>
+
+          <div class="column">
+            <object
+              type="text/html"
+              data="https://fitfun-warszawa.cms.efitness.com.pl/"
+              class="inserted"
+            ></object>
+          </div>
+        </div>
+      </section>
+
+      <section id="oferta">
+        <div class="row">
+          <div class="column">
+            <div class="card"></div>
+          </div>
+
+          <div class="column">
+            <div class="card"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="onas">
+        <div class="row">
+          <div class="column">
+            <div class="card"></div>
+          </div>
+
+          <div class="column">
+            <div class="card"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="grafik">
+        <object
+          type="text/html"
+          data="https://fitfun-warszawa.cms.efitness.com.pl/kalendarz-zajec"
+          class="inserted single-card"
+          style="padding: 0; max-width: 1300px"
+        ></object>
+      </section>
+
+      <section id="kontakt">
+        <div class="row">
+          <div class="column">
+            <div class="card" style="margin-top: 10vh"></div>
+          </div>
+
+          <div class="column">
+            <div
+              class="map-responsive card"
+              style="box-shadow: 0; max-height: 40vh; margin-top: 10vh"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1539.468095745392!2d21.014701376866427!3d52.29292815489459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ec94df1c8fb63%3A0x845518b721a29bfb!2sFit%20%26%20Fun!5e1!3m2!1sen!2spl!4v1633650060113!5m2!1sen!2spl"
+                width="600"
+                height="450"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </section>
 
       <div class="footer">
-
-
         <p>
-          <a href="tel:22-675-98-27" class="footer-links-text"
-            >kontakt: 22-6759827</a>  | 
+          <a href="tel:22-675-98-27">kontakt: 22-6759827</a>
+          &nbsp; | &nbsp;
 
-          <br class="mobile490px">
-          
-          <a href="mailto:  KLUB@FITFUN.PL" class="footer-links-text"
-            >email: klub@fitfun.pl</a> |
-
-            <br class="mobile1150px">
-
-            &nbsp; zobacz nasze social media: <a
-          href="https://www.facebook.com/fitnessfitfun"
-          class="footer-links fab fa-facebook-square fa-lg "
-        ></a>
-        <a
-          href="https://www.instagram.com/fitfun_gym_warsaw/?hl=en"
-          class="footer-links fab fa-instagram-square fa-lg"
-        ></a>
+          <a href="mailto:  KLUB@FITFUN.PL">email: klub@fitfun.pl</a>
+          &nbsp; | &nbsp;
+          <br />
+          media społecznościowe:
+          <a
+            href="https://www.facebook.com/fitnessfitfun/"
+            class="footer-icon fab fa-facebook-square fa-lg"
+            style="border-style: none"
+          ></a>
+          <a
+            href="https://www.instagram.com/fitfun_gym_warsaw/?hl=en"
+            class="footer-icon fab fa-instagram-square fa-lg"
+            style="border-style: none"
+          ></a>
         </p>
-       
       </div>
     </div>
-    </div>
 
-    <script src="main.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
