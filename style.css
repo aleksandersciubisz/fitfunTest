@@ -161,7 +161,7 @@ section {
 }
 
 section h1 {
-  font-size: clamp(0.9rem, 4vw - 1.3rem, 1.6rem);
+  font-size: clamp(0.9rem, 4vw - 1.3rem, 1.5rem);
   max-width: 100%;
 }
 
@@ -243,6 +243,8 @@ a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   margin: 4% 2%;
+  margin-top: 11vh;
+  max-height: 60vh;
   color: #808080;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.9);
@@ -279,6 +281,15 @@ a {
 
 .btn-pair {
   display: flex;
+}
+/* OWL Carousel elements styling*/
+.owl-dots {
+  display: none;
+}
+
+.item {
+  min-height: 100%;
+  max-height: 60vh;
 }
 
 /* Footer with fixed position*/
@@ -453,10 +464,17 @@ a {
     max-width: 100%;
   }
 
+  section p {
+    font-weight: normal;
+  }
+
   /* Responsive columns - one column layout (vertical) on small screens */
   .row {
     vertical-align: top;
+    margin-top: 5vh;
+    margin-bottom: 0;
   }
+
   .column {
     width: 100%;
     display: inline-block;
@@ -470,7 +488,7 @@ a {
     justify-content: center;
     padding: 5px;
     margin: 5px 10px;
-    min-height: 30vh;
+    min-height: 35vh;
   }
 
   .inserted {
@@ -487,6 +505,15 @@ a {
     margin: 5px 10px;
   }
 
+  /* OWL Carousel Items */
+  .item {
+    max-height: 40vh;
+  }
+
+  .item img {
+    max-height: 35vh;
+  }
+
   .btn-pair {
     display: block;
   }
@@ -497,6 +524,10 @@ a {
 }
 
 @media screen and (max-width: 700px) {
+  .footer {
+    display: none;
+  }
+
   .btn {
     width: 200px;
     height: auto;
@@ -517,12 +548,6 @@ a {
 @media screen and (max-width: 420px) {
   .displayNone420px {
     display: none;
-  }
-}
-
-@media screen and (max-width: 370px) {
-  .footer br {
-    display: inline;
   }
 }
 
