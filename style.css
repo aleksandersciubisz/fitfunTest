@@ -183,7 +183,6 @@ a {
   width: 100%;
   min-height: 70vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 4% 2%;
   color: #f0f0f0;
   border-radius: 15px;
   background-color: rgba(1, 1, 1, 0.7);
@@ -228,6 +227,7 @@ a {
   width: 100%;
   margin: 0 -5px;
   width: 95%;
+  margin-top: 10vh;
 }
 
 /* Clear floats after the columns */
@@ -241,9 +241,8 @@ a {
 .card {
   min-height: 70vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
   padding: 16px;
-  margin: 4% 2%;
-  margin-top: 11vh;
   max-height: 60vh;
   color: #808080;
   border-radius: 15px;
@@ -486,14 +485,12 @@ a {
     display: block;
     text-align: center;
     justify-content: center;
-    padding: 5px;
-    margin: 5px 10px;
+    margin: 10px 10px;
     min-height: 35vh;
   }
 
   .inserted {
-    min-height: 30vh;
-    width: 95%;
+    min-height: 40vh;
   }
 
   .btn {
