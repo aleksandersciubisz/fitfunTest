@@ -352,6 +352,18 @@ a {
   color: #cb0016;
 }
 
+.kontakt-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  vertical-align: top;
+  text-align: left;
+}
+
+.kontakt-colum {
+  margin: 15px 20px;
+}
+
 /* start of media queries */
 @media screen and (max-width: 1410px) {
   .navbar {
@@ -539,6 +551,10 @@ a {
 
   #kontakt p {
     font-size: clamp(0.5rem, 8vw - 0.6rem, 0.8rem);
+  }
+
+  .kontakt-colum {
+    margin: 5px 14px;
   }
 }
 
