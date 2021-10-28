@@ -18,44 +18,31 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
 
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="img/apple-touch-icon.png"
+      href="assets/img/favicons/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="img/favicon-32x32.png"
+      href="assets/img/favicons/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="img/favicon-16x16.png"
+      href="assets/img/favicons/favicon-16x16.png"
     />
     <link rel="manifest" href="site.webmanifest" />
 
-    <!-- OWL Carousel stylesheet from CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
     <!-- Main custom stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <title>Fit & Fun</title>
   </head>
@@ -63,11 +50,10 @@
   <body>
     <!-- Full page is wrapped in this div -->
     <div class="full-page-wiev-container">
-      <!-- Responsive Navbar -->
       <div class="nav-container">
         <nav class="navbar">
           <a href="#home">
-            <img src="img/fitFunLogo.png" alt="" id="navbar-logo"
+            <img src="assets/img/fitFunLogo.png" alt="" id="navbar-logo"
           /></a>
           <div class="menu-toggle" id="mobile-menu">
             <span class="bar"></span>
@@ -75,13 +61,16 @@
             <span class="bar"></span>
           </div>
           <ul class="nav-menu">
+            <li><a href="#onas" class="nav-links">o&nbsp;nas</a></li>
+
             <li>
               <a href="#aktualnosci" class="nav-links">aktualności</a>
             </li>
-            <li><a href="#oferta" class="nav-links">oferta</a></li>
-            <li><a href="#onas" class="nav-links">o&nbsp;nas</a></li>
-
             <li><a href="#grafik" class="nav-links">grafik</a></li>
+
+            <li><a href="#oferta" class="nav-links">oferta</a></li>
+            <li><a href="#cennik" class="nav-links">cennik</a></li>
+
             <li><a href="#kontakt" class="nav-links">kontakt</a></li>
 
             <li>
@@ -98,310 +87,297 @@
       <!-- Full page sections-->
       <section id="home" class="showcase">
         <div class="video-container">
-          <video src="img/fitfunHome.mov" autoplay="" muted="" loop=""></video>
+          <video
+            src="assets/img/backgrounds/fitfun.webm"
+            autoplay=""
+            muted=""
+            loop=""
+          ></video>
         </div>
-        <div class="homecontent">
-          <h1>Witamy w Fit &amp; Fun!</h1>
-          <p>Od 25 lat spełniamy marzenia</p>
-          <div class="btn-pair">
+        <div class="home-content">
+          <h1>Witamy w fit & fun!</h1>
+          <p class="font-big">Od 25 lat spełniamy marzenia</p>
+          <div class="home-btn-container">
             <a
               href="https://fitfun-warszawa.cms.efitness.com.pl/Login/SystemLogin?returnurl=https://fitfun-warszawa.cms.efitness.com.pl/strefa-klienta"
-              class="btn"
-              >Dołącz do nas</a
+              class="btn home-btn"
+              >Dołącz&nbsp;do&nbsp;nas</a
             >
             <a
               href="https://fitfun-warszawa.cms.efitness.com.pl/kup-karnet"
-              class="btn"
-              >Wybierz karnet</a
+              class="btn home-btn"
+              >Wybierz&nbsp;karnet</a
             >
-          </div>
-        </div>
-      </section>
-
-      <section id="aktualnosci" class="">
-        <div class="row">
-          <div class="column">
-            <div class="card">
-              <h1>Aktualności</h1>
-              <p>
-                Wszystkich aktywnych klubowiczów zachęcamy do obserwowania
-                naszych mediów społecznościowych.
-              </p>
-              <br />
-              <a
-                href="https://www.facebook.com/fitnessfitfun/"
-                class="btn"
-                style="text-transform: none"
-                >Facebook:
-                <div
-                  class="fab fa-facebook-square fa-lg"
-                  style="border-style: none"
-                ></div
-              ></a>
-
-              <a
-                href="https://www.instagram.com/fitfun_gym_warsaw/?hl=en"
-                class="btn"
-                style="text-transform: none"
-                >Instagram:
-                <div
-                  class="fab fa-instagram-square fa-lg"
-                  style="border-style: none"
-                ></div
-              ></a>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card" style="padding: 0">
-              <object
-                type="text/html"
-                data="https://fitfun-warszawa.cms.efitness.com.pl/"
-                class="inserted"
-              ></object>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="oferta">
-        <div class="row">
-          <div class="column">
-            <div class="card">
-              <h1>Oferta:</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Architecto accusamus cumque ex necessitatibus labore reiciendis
-                aspernatur eum nam voluptas, sed minus, maxime magnam pariatur?
-                Rem doloribus tempora in earum sapiente quibusdam eius
-                voluptatem cupiditate mollitia fugit provident similique iure
-                perferendis, laboriosam dignissimos? Fugiat, consequuntur id?
-                Animi vitae iure accusantium adipisci? Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Praesentium nemo nulla
-                quibusdam sunt quasi consectetur enim minima laboriosam odit.
-                Laudantium alias fuga architecto eum, nisi amet quasi, unde
-                provident placeat 75 słów
-              </p>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="card" style="padding: 0">
-              <object
-                type="text/html"
-                data="https://fitfun-warszawa.cms.efitness.com.pl/kup-karnet"
-                class="inserted"
-              ></object>
-            </div>
           </div>
         </div>
       </section>
 
       <section id="onas">
-        <div class="row">
-          <div class="column">
-            <div class="card card-up"><h1>O nas:</h1></div>
-          </div>
+        <div class="card">
+          <p class="font-big">Miło Cię widzieć w Fit & Fun!</p>
+        </div>
+        <div class="card" style="padding: 0">
+          <p class="none500" style="padding-top: 2vh">
+            Zobacz co mamy w środku:
+          </p>
+          <div class="carousel">
+            <!-- OWL Carousel with gym gallery -->
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <img src="assets/img/carousel/c1.jpg" alt="" />
+              </div>
 
-          <div class="column">
-            <div
-              class="card card-down"
-              style="
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              "
-            >
-              <!-- OWL Carousel with gym gallery -->
-              <div class="owl-carousel owl-theme">
-                <div class="item"><img src="img/c1.jpg" alt="" /></div>
-                <div class="item"><img src="img/c2.jpg" alt="" /></div>
-                <div class="item"><img src="img/c3.jpg" alt="" /></div>
-                <div class="item"><img src="img/c4.jpg" alt="" /></div>
-                <div class="item"><img src="img/c5.jpg" alt="" /></div>
-                <div class="item"><img src="img/c6.jpg" alt="" /></div>
-                <div class="item"><img src="img/c7.jpg" alt="" /></div>
-                <div class="item"><img src="img/c8.jpg" alt="" /></div>
-                <div class="item"><img src="img/c10.jpg" alt="" /></div>
-                <div class="item"><img src="img/c11.jpg" alt="" /></div>
-                <div class="item"><img src="img/c12.jpg" alt="" /></div>
-                <div class="item"><img src="img/c13.jpg" alt="" /></div>
-                <div class="item"><img src="img/c14.jpg" alt="" /></div>
+              <div class="item">
+                <img src="assets/img/carousel/c2.jpg" alt="" />
+              </div>
+
+              <div class="item">
+                <img src="assets/img/carousel/c3.jpg" alt="" />
+              </div>
+
+              <div class="item">
+                <img src="assets/img/carousel/c4.jpg" alt="" />
+              </div>
+
+              <div class="item">
+                <img src="assets/img/carousel/c5.jpg" alt="" />
+              </div>
+
+              <div class="item">
+                <img src="assets/img/carousel/c6.jpg" alt="" />
+              </div>
+              <div class="item">
+                <img src="assets/img/carousel/c9.jpg" alt="" />
+              </div>
+
+              <div class="item">
+                <img src="assets/img/carousel/c11.jpg" alt="" />
+              </div>
+
+              <div class="item">
+                <img src="assets/img/carousel/c12.jpg" alt="" />
+              </div>
+
+              <div class="item">
+                <img src="assets/img/carousel/c14.jpg" alt="" />
+              </div>
+
+              <div class="item">
+                <img src="assets/img/carousel/c15.jpg" alt="" />
+              </div>
+
+              <div class="item">
+                <img src="assets/img/carousel/c16.jpg" alt="" />
+              </div>
+
+              <div class="item">
+                <img src="assets/img/carousel/c18.jpg" alt="" />
+              </div>
+
+              <div class="item">
+                <img src="assets/img/carousel/c19.jpg" alt="" />
+              </div>
+
+              <div class="item">
+                <img src="assets/img/carousel/c22.jpg" alt="" />
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="aktualnosci" class="">
+        <div class="card" style="flex: 1">
+          <h1>Aktualności</h1>
+          <p>
+            Wszystkich Aktywnych Klubowiczów zachęcamy do obserwowania Nas w
+            mediach społecznościowych, znajdziecie tam najnowsze informacje o
+            planowanych zajęciach.
+          </p>
+          <br class="none500" />
+          <div class="social">
+            <a
+              href="https://www.facebook.com/fitnessfitfun/"
+              style="border-style: none"
+            >
+              Facebook:&nbsp;<i
+                class="footer-icon fab fa-facebook-square fa-lg"
+              ></i
+            ></a>
+            <a
+              href="https://www.instagram.com/fitfun_gym_warsaw/?hl=en"
+              style="border-style: none"
+              >Instagram:&nbsp;<i
+                class="footer-icon fab fa-instagram-square fa-lg"
+              ></i
+            ></a>
+          </div>
+        </div>
+        <div class="card card-inserted" style="flex: 4">
+          <object
+            type="text/html"
+            data="https://fitfun-warszawa.cms.efitness.com.pl/index"
+            class="inserted"
+          ></object>
         </div>
       </section>
 
       <section id="grafik">
-        <object
-          type="text/html"
-          data="https://fitfun-warszawa.cms.efitness.com.pl/kalendarz-zajec"
-          class="inserted single-card"
-          style="padding: 0; max-width: 1300px"
-        ></object>
-      </section>
-
-      <section id="kontakt">
-        <div class="row">
-          <div class="column">
-            <div class="card">
-              <div class="kontakt-card">
-                <div class="kontakt-colum">
-                  <h1>Kontakt:</h1>
-                  <p><a href="tel:22-675-98-27">tel. 22-6759827</a></p>
-                  <p>
-                    <a href="mailto:  KLUB@FITFUN.PL">email: klub@fitfun.pl</a>
-                  </p>
-
-                  <p>
-                    <a
-                      href="https://www.facebook.com/fitnessfitfun/"
-                      class="footer-icon fab fa-facebook-square fa-lg"
-                      style="border-style: none"
-                      >&nbsp;Facebook</a
-                    >
-                  </p>
-                  <p>
-                    <a
-                      href="https://www.instagram.com/fitfun_gym_warsaw/?hl=en"
-                      class="footer-icon fab fa-instagram-square fa-lg"
-                      style="border-style: none"
-                      >&nbsp;Instagram</a
-                    >
-                  </p>
-                </div>
-                <div class="kontakt-colum displayNone420px">
-                  <h1>Adres:</h1>
-                  <p>ul. Wysockiego 51</p>
-                  <p>03-202 Warszawa</p>
-                </div>
-
-                <div class="kontakt-colum">
-                  <h1>Godziny otwarcia:</h1>
-                  <p>pon-pt: 7:00-22:00</p>
-                  <p>sobota: 8:00-16:00</p>
-                  <p>niedziela: 9:00-16:00</p>
-                </div>
-              </div>
-              <div style="display: inline">
-                <div class="displayNone950px">
-                  <p style="padding-top: 5px">
-                    <a
-                      href="sites/regulamin_ośrodka_rehabilitacyjno_Sportowego_Fit&Fun.html"
-                      >Regulamin Ośrodka Rehabilitacyjno-Sportowego Fit&Fun.</a
-                    >
-                  </p>
-                  <p style="padding-top: 5px">
-                    <a
-                      href="sites/informacja_dotycząca_przetwarzania_danych _osobowych.html"
-                      >Informacje dotyczące przetwarzania danych osobowych.</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="map-responsive card">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1539.468095745392!2d21.014701376866427!3d52.29292815489459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ec94df1c8fb63%3A0x845518b721a29bfb!2sFit%20%26%20Fun!5e1!3m2!1sen!2spl!4v1633650060113!5m2!1sen!2spl"
-                width="600"
-                height="450"
-                frameborder="0"
-                style="border: 0"
-                allowfullscreen
-                loading="lazy"
-              ></iframe>
-            </div>
-          </div>
+        <div class="card card-inserted">
+          <object
+            type="text/html"
+            data="https://fitfun-warszawa.cms.efitness.com.pl/kalendarz-zajec"
+            class="inserted"
+          ></object>
         </div>
       </section>
 
-      <div class="footer">
-        <p>
-          <a href="tel:22-675-98-27">kontakt: 22-6759827</a>
-          &nbsp; | &nbsp;
+      <section id="oferta">
+        <div class="card">
+          <h1>Oferta</h1>
+        </div>
+        <div class="card"></div>
+      </section>
 
-          <a href="mailto:  KLUB@FITFUN.PL">email: klub@fitfun.pl</a>
-          &nbsp; | &nbsp;
-          <br />
-          media społecznościowe:
-          <a
-            href="https://www.facebook.com/fitnessfitfun/"
-            class="footer-icon fab fa-facebook-square fa-lg"
-            style="border-style: none"
-          ></a>
-          <a
-            href="https://www.instagram.com/fitfun_gym_warsaw/?hl=en"
-            class="footer-icon fab fa-instagram-square fa-lg"
-            style="border-style: none"
-          ></a>
-        </p>
-      </div>
+      <section id="cennik">
+        <div class="card">
+          <h1>cennik</h1>
+        </div>
+        <div class="card"></div>
+      </section>
+
+      <section id="kontakt">
+        <div class="card">
+          <div class="kontakt-card">
+            <div class="kontakt-column">
+              <h2>Kontakt:</h2>
+              <p><a href="tel:22-675-98-27">tel. 22-6759827</a></p>
+              <p>
+                <a href="mailto:  KLUB@FITFUN.PL">email: klub@fitfun.pl</a>
+              </p>
+
+              <p>
+                <a
+                  href="https://www.facebook.com/fitnessfitfun/"
+                  class="footer-icon fab fa-facebook-square fa-lg"
+                  style="border-style: none"
+                  >&nbsp;Facebook</a
+                >
+              </p>
+              <p>
+                <a
+                  href="https://www.instagram.com/fitfun_gym_warsaw/?hl=en"
+                  class="footer-icon fab fa-instagram-square fa-lg"
+                  style="border-style: none"
+                  >&nbsp;Instagram</a
+                >
+              </p>
+            </div>
+            <div class="kontakt-column none950">
+              <h2>Adres:</h2>
+              <p>ul. Wysockiego 51</p>
+              <p>03-202 Warszawa</p>
+            </div>
+
+            <div class="kontakt-column">
+              <h2>Godziny otwarcia:</h2>
+              <p>pon-pt: 7:00-22:00</p>
+              <p>sobota: 8:00-16:00</p>
+              <p>niedziela: 9:00-16:00</p>
+            </div>
+          </div>
+          <div style="display: inline">
+            <p style="padding-top: 5px" class="none450">
+              <a
+                href="assets/sites/regulamin_ośrodka_rehabilitacyjno_Sportowego_Fit&Fun.html"
+                >Regulamin Ośrodka Rehabilitacyjno-Sportowego Fit&Fun.</a
+              >
+            </p>
+            <p style="padding-top: 5px" class="none450">
+              <a
+                href="assets/sites/informacja_dotycząca_przetwarzania_danych _osobowych.html"
+                >Informacje dotyczące przetwarzania danych osobowych.</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="card card-inserted">
+          <div class="map-responsive">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1539.468095745392!2d21.014701376866427!3d52.29292815489459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ec94df1c8fb63%3A0x845518b721a29bfb!2sFit%20%26%20Fun!5e1!3m2!1sen!2spl!4v1633650060113!5m2!1sen!2spl"
+              width="600"
+              height="450"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <script src="script.js"></script>
+    <footer>
+      <a href="tel:22-675-98-27">kontakt: 22-6759827</a>
 
-    <!-- JQuery CDN-->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+      <a href="mailto:  KLUB@FITFUN.PL">email: klub@fitfun.pl</a>
 
-    <!-- OWL Carousel CDN -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+      <a
+        href="https://www.facebook.com/fitnessfitfun/"
+        style="border-style: none"
+      >
+        Facebook:&nbsp;<i class="footer-icon fab fa-facebook-square fa-lg"></i
+      ></a>
+      <a
+        href="https://www.instagram.com/fitfun_gym_warsaw/?hl=en"
+        style="border-style: none"
+        >Instagram:&nbsp;<i
+          class="footer-icon fab fa-instagram-square fa-lg"
+        ></i
+      ></a>
+
+      <a href="#home" class="scrollup" id="scroll-up">
+        <i class="fas fa-angle-up fa-lg scrollup-icon"></i>
+      </a>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+    <!-- JQuery -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- OWL Carousel -->
+    <script src="assets/js/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- OWL Carousel setup script-->
     <script>
       $('.owl-carousel').owlCarousel({
-        stagePadding: 35,
+        items: 1,
+        stagePadding: 0,
         loop: true,
         margin: 3,
         nav: true,
         center: true,
         smartSpeed: 900,
         navText: [
-          "<i class='fa fa-chevron-left'></i>",
-          "<i class='fa fa-chevron-right'></i>",
+          "<i class='car fa fa-chevron-left'></i>",
+          "<i class='car fa fa-chevron-right'></i>",
         ],
         responsive: {
           0: {
             items: 1,
-            stagePadding: 35,
+            stagePadding: 0,
+          },
+
+          380: {
+            items: 1,
+            stagePadding: 45,
           },
 
           500: {
             items: 1,
-            stagePadding: 75,
-          },
-
-          600: {
-            items: 3,
-            stagePadding: 35,
-          },
-
-          860: {
-            items: 1,
-            stagePadding: 35,
-          },
-
-          1200: {
-            items: 1,
-            stagePadding: 55,
-          },
-
-          1500: {
-            items: 1,
-            stagePadding: 100,
+            stagePadding: 0,
           },
         },
       })
