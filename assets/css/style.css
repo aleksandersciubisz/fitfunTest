@@ -316,6 +316,11 @@ section {
 .onas-card {
   background-color: var(--white-color);
 }
+
+.onas-card h2 {
+  margin: 0;
+  padding: 0;
+}
 #onas-logo {
   max-width: 220px;
   height: auto;
@@ -369,10 +374,7 @@ section {
 }
 
 /* ---------- Section: Aktualności ---------- */
-#aktualnosci card {
-  justify-content: center;
-  align-items: center;
-}
+
 #aktualnosci a {
   color: var(--grey-color);
   cursor: pointer;
@@ -386,6 +388,14 @@ section {
 
 #aktualnosci a:hover {
   color: var(--red-color-alt);
+}
+
+.social-responsive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 /* ---------- Section: Grafik ---------- */
 
