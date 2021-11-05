@@ -313,6 +313,14 @@ section {
 }
 
 /* ---------- Section: O nas ---------- */
+.onas-card {
+  background-color: var(--white-color);
+}
+#onas-logo {
+  max-width: 220px;
+  height: auto;
+  max-height: 100px;
+}
 .carousel {
   display: flex;
   flex-direction: column;
@@ -362,7 +370,8 @@ section {
 
 /* ---------- Section: Aktualności ---------- */
 #aktualnosci card {
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 #aktualnosci a {
   color: var(--grey-color);
@@ -371,15 +380,44 @@ section {
   padding: 1px;
 }
 
+#aktualnosci p {
+  text-align: center;
+}
+
 #aktualnosci a:hover {
   color: var(--red-color-alt);
 }
 /* ---------- Section: Grafik ---------- */
-#grafik > .card-inserted {
-  min-width: var(--min-width);
-}
+
 /* ---------- Section: Oferta ---------- */
 /* ---------- Section: Cennik ---------- */
+table,
+th,
+td {
+  text-align: left;
+  padding-left: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  height: 35px;
+  border-radius: 10px;
+  color: var(--white-color);
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+td {
+  min-height: 30px;
+}
+
+.tdc {
+  background-color: var(--white-color);
+}
+
 /* ---------- Section: Kontakt ---------- */
 #kontakt h2 {
   margin-left: 0;
@@ -485,6 +523,9 @@ footer > a:hover {
 
 /* Hamburger menu treshold  */
 @media screen and (max-width: 700px) {
+  .none700 {
+    display: none;
+  }
   .card {
     min-width: 230px;
   }
@@ -580,6 +621,14 @@ footer > a:hover {
     display: none;
   }
 
+  #grafik {
+    padding: 0;
+  }
+
+  #grafik > .card-inserted {
+    min-width: 100%;
+  }
+
   .kontakt-card {
     padding: 5px;
   }
@@ -622,6 +671,13 @@ footer > a:hover {
 
 @media screen and (max-width: 450px) {
   .none450 {
+    display: none;
+  }
+}
+
+/* ---------- Vertical media queries ---------- */
+@media screen and (max-height: 580px) {
+  .none580h {
     display: none;
   }
 }
