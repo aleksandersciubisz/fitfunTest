@@ -26,6 +26,7 @@
   --normal-font-size: clamp(0.8rem, 0.7273rem + 0.3636vw, 1rem);
   --small-font-size: clamp(0.8rem, 0.7273rem + 0.3636vw, 1rem);
   --nav-font-size: clamp(0.7rem, 0.6273rem + 0.3636vw, 0.9rem);
+  --welcome: clamp(1rem, 0.2727rem + 3.6364vw, 3rem);
 }
 
 /* ---------- Fonts styles ---------- */
@@ -62,7 +63,7 @@ a {
 }
 
 .font-big {
-  font-size: var(--big-font-size-font-size);
+  font-size: var(--big-font-size);
 }
 
 .italic {
@@ -402,40 +403,33 @@ section {
 
 /* ---------- Section: Oferta ---------- */
 
-.ofertaDiv {
-  flex: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-end;
-  width: 100%;
-  max-height: 33.3%;
-  margin: 1vh 0;
-}
-
-.ofertaText {
-  display: flex;
+.cardOferta {
+  flex: 1.6;
   flex-direction: column;
-  align-items: center;
-  justify-content: left;
-  flex: 3;
-  width: 100%;
-  height: 100%;
-  padding: 5px 15px;
+  justify-content: space-between;
+  padding: 1vh 1vw;
 }
 
-.ofertaImg {
-  flex: 2;
-  width: 100%;
-  height: 100%;
-  max-width: 200px;
-  max-height: 200px;
+.cardOfertaImg {
+  flex: 1;
+  padding: 1vw;
 }
 
-#oferta img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
+#oferta p {
+  align-self: flex-start;
+}
+
+#oferta span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#oferta a {
+  color: var(--gray-color);
+}
+
+#oferta a:hover {
+  color: var(--red-color);
 }
 
 /* ---------- Section: Cennik ---------- */
@@ -567,22 +561,6 @@ footer > a:hover {
     margin: 0px 20px;
     justify-self: center;
   }
-
-  #oferta .card {
-    padding: 2vw;
-    margin: 1vh;
-    justify-content: space-around;
-  }
-
-  .ofertaDiv {
-    margin-bottom: 1vh;
-    padding: 0;
-    justify-content: space-evenly;
-  }
-
-  .ofertaImg {
-    flex: 2;
-  }
 }
 
 /* Hamburger menu treshold  */
@@ -685,20 +663,22 @@ footer > a:hover {
     display: none;
   }
 
-  #grafik {
-    padding: 0;
-  }
-
-  #grafik > .card-inserted {
-    min-width: 100%;
-  }
-
   .kontakt-card {
     padding: 5px;
   }
 
   .kontakt-column {
     margin: 5px;
+  }
+
+  #cennik .card {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  #cennik {
+    padding: var(--header-height-min) 0 0 0;
   }
 }
 
@@ -713,6 +693,21 @@ footer > a:hover {
   .card {
     height: 40vh;
     width: 90%;
+  }
+
+  #grafik {
+    margin: 0;
+    padding: var(--header-height) 0 0 0;
+  }
+
+  #grafik .card {
+    width: 100%;
+    height: 100%;
+  }
+
+  #grafik > .card-inserted {
+    min-width: 100%;
+    height: 100%;
   }
 
   .owl-item {
@@ -735,6 +730,12 @@ footer > a:hover {
 
 @media screen and (max-width: 450px) {
   .none450 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .none374 {
     display: none;
   }
 }
@@ -770,6 +771,10 @@ section#oferta {
 
 section#cennik {
   background: url(../img/backgrounds/b3.jpg) no-repeat center center/ cover;
+}
+
+section#cennik2 {
+  background: url(../img/backgrounds/b1.jpg) no-repeat center center/ cover;
 }
 
 section#onas {
