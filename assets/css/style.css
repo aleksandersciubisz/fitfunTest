@@ -328,6 +328,12 @@ section {
   height: auto;
   max-height: 100px;
 }
+
+#onas span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .carousel {
   display: flex;
   flex-direction: column;
@@ -458,6 +464,11 @@ td {
 
 .tdc {
   background-color: var(--white-color);
+}
+
+p {
+  width: 100%;
+  text-align: left;
 }
 
 /* ---------- Section: Kontakt ---------- */
